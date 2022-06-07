@@ -24,17 +24,17 @@ class VideosAdapter(val videosList: ArrayList<VideoModel>): RecyclerView.Adapter
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-        holder.youtubeWebView.settings.javaScriptEnabled = true
-        holder.youtubeWebView.webChromeClient = WebChromeClient()
-
-
-        holder. youtubeWebView.loadData(videosList.get(position).videoUrl,"text/html","utf-8")
+//
+//        holder.youtubeWebView.settings.javaScriptEnabled = true
+//        holder.youtubeWebView.webChromeClient = WebChromeClient()
+//
+//
+//        holder. youtubeWebView.loadData(videosList.get(position).videoUrl,"text/html","utf-8")
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val youtubeWebView = itemView.findViewById(R.id.web_view) as WebView
+//        val youtubeWebView = itemView.findViewById(R.id.web_view) as WebView
 
 
 
